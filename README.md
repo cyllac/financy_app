@@ -1,4 +1,6 @@
-# financy_app
+# Financy
+
+#### Credit: [App Financeiro com Flutter](https://www.youtube.com/playlist?list=PLtlg0Apoubs_xVS8QxIX51zl0iucEcKyK)
 
 A new Flutter project.
 
