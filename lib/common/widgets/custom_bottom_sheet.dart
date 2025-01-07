@@ -30,7 +30,7 @@ Future<void> customModalBottomSheet(
                   horizontal: 32.0,
                 ),
                 child: PrimaryButton(
-                  text: buttonText!,
+                  text: buttonText,
                   onPressed: onPressed ?? () => Navigator.pop(context),
                 ),
               ),

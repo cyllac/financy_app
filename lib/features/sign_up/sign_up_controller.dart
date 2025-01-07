@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:financy_app/features/sign_up/sign_up_state.dart';
 import 'package:financy_app/services/auth_service.dart';
 import 'package:flutter/foundation.dart';
@@ -9,7 +7,7 @@ class SignUpController extends ChangeNotifier {
 
   SignUpController(this._service);
 
-  SignUpState _state = SignUpInitialState();
+  SignUpState _state = SignUpStateInitial();
 
   SignUpState get state => _state;
 
@@ -23,7 +21,7 @@ class SignUpController extends ChangeNotifier {
     required String email,
     required String password,
   }) async {
-    _changeState(SignUpLoadingState());
+    _changeState(SignUpStateLoading());
     try {
       await _service.signUp(
         name: name,
@@ -31,9 +29,9 @@ class SignUpController extends ChangeNotifier {
         password: password,
       );
 
-      _changeState(SignUpSuccessState());
+      _changeState(SignUpStateSuccess());
     } catch (e) {
-      _changeState(SignUpErrorState(e.toString()));
+      _changeState(SignUpStateError(e.toString()));
     }
   }
 }

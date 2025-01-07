@@ -6,6 +6,9 @@ abstract class AuthService {
     required String email,
     required password,
   });
-  
-  Future<UserModel> signIn(String email, String password);
+
+  Future<UserModel> signIn({
+    required String email,
+    required String password,
+  });
 }
