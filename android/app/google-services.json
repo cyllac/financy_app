@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "252008971737",
+    "project_id": "financy-app-9aa05",
+    "storage_bucket": "financy-app-9aa05.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252008971737:android:a15d54636e85226968edc8",
+        "android_client_info": {
+          "package_name": "br.com.cyllac.financy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlhIgiOIjfpVmr3bp0-nphvw0IWILg848"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252008971737:android:e6ad1b17ecd316e968edc8",
+        "android_client_info": {
+          "package_name": "br.com.cyllac.financy_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlhIgiOIjfpVmr3bp0-nphvw0IWILg848"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252008971737:android:aa97e411347bd9c668edc8",
+        "android_client_info": {
+          "package_name": "dev.cyllac.financy.financy_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlhIgiOIjfpVmr3bp0-nphvw0IWILg848"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,7 @@ class MockAuthService implements AuthService {
       }
 
       return UserModel(
-        id: email.hashCode,        
+        id: email.hashCode.toString(),
         email: email,
       );
     } catch (e) {
@@ -35,7 +35,7 @@ class MockAuthService implements AuthService {
         throw Exception();
       }
 
-      return UserModel(id: email.hashCode, name: name, email: email);
+      return UserModel(id: email.hashCode.toString(), name: name, email: email);
     } catch (e) {
       if (password.startsWith('123')) {
         throw "Senha muito fraca.";
