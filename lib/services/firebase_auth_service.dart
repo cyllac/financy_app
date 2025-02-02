@@ -16,7 +16,7 @@ class FirebaseAuthService implements AuthService {
         password: password,
       );
 
-      if (result.user != null) {        
+      if (result.user != null) {
         return UserModel(
           name: result.user!.displayName,
           email: result.user!.email,
@@ -29,7 +29,7 @@ class FirebaseAuthService implements AuthService {
       throw e.message ?? "null";
     } catch (e) {
       rethrow;
-    }    
+    }
   }
 
   @override
@@ -44,18 +44,27 @@ class FirebaseAuthService implements AuthService {
         password: password,
       );
 
-      if (result.user != null) {
+      if (_auth.currentUser != null) {
         await result.user!.updateDisplayName(name);
         return UserModel(
-          name: result.user!.displayName,
-          email: result.user!.email,
-          id: result.user!.uid,
+          name: _auth.currentUser?.displayName,
+          email: _auth.currentUser?.email,
+          id: _auth.currentUser?.uid,
         );
       } else {
         throw Exception();
       }
     } on FirebaseAuthException catch (e) {
       throw e.message ?? "null";
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  @override
+  Future<void> signOut() async {
+    try {
+      await _auth.signOut();
     } catch (e) {
       rethrow;
     }

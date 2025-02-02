@@ -50,13 +50,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
       if (_controller.state is SignUpStateSuccess) {
         Navigator.of(context).pop();
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const Scaffold(
-            body: Center(
-              child: Text("Nova Tela"),
-            ),
-          ),
-        ));
+        Navigator.pushReplacementNamed(context, NamedRoutes.home);
       }
 
       if (_controller.state is SignUpStateError) {
