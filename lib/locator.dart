@@ -15,6 +15,8 @@ void setupDependencies() {
       () => SplashController(const SecureStorage()));
   locator.registerFactory<SignInController>(
       () => SignInController(locator.get<AuthService>()));
-  locator.registerFactory<SignUpController>(
-      () => SignUpController(locator.get<AuthService>()));
+  locator.registerFactory<SignUpController>(() => SignUpController(
+        locator.get<AuthService>(),
+        const SecureStorage(),
+      ));
 }
