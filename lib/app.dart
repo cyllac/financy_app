@@ -1,9 +1,13 @@
 import 'package:financy_app/common/constants/routes.dart';
 import 'package:financy_app/features/home/home_page.dart';
+import 'package:financy_app/features/home/home_page_view.dart';
 import 'package:financy_app/features/onboarding/onboarding_page.dart';
+import 'package:financy_app/features/profile/profile_page.dart';
 import 'package:financy_app/features/sign_in/sign_in_page.dart';
 import 'package:financy_app/features/sign_up/sign_up_page.dart';
 import 'package:financy_app/features/splash/splash_page.dart';
+import 'package:financy_app/features/stats/stats_page.dart';
+import 'package:financy_app/features/wallet/wallet_page.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -19,7 +23,10 @@ class App extends StatelessWidget {
         NamedRoutes.splash: (context) => const SplashPage(),
         NamedRoutes.signUp: (context) => const SignUpPage(),
         NamedRoutes.signIn: (context) => const SignInPage(),
-        NamedRoutes.home: (context) => const HomePage(),
+        NamedRoutes.home: (context) => const HomePageView(),
+        NamedRoutes.stats: (context) => const StatsPage(),
+        NamedRoutes.wallet: (context) => const WalletPage(),
+        NamedRoutes.profile: (context) => const ProfilePage(),
       },
     );
   }
