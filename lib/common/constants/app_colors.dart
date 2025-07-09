@@ -21,4 +21,9 @@ class AppColors {
   static const Color lightkGrey = Color(0xFFAAAAAA);
   static const Color error = Color(0xFFF44336);
   static const Color green = Color(0xFF438883);
+  static const Color notification = Color(0xFFFF9901);
+  static const Color darkGreen = Color(0xFF244745);
+  static const Color income = Color.fromARGB(255, 72, 231, 98);
+  static const Color outcome = Color.fromARGB(255, 219, 114, 82);
+  static const Color antiFlashWhite = Color.fromARGB(255, 219, 114, 82);
 }
